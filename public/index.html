@@ -4,25 +4,39 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>LJR Property Maintenance - Expert Carpentry & Maintenance</title>
-		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="../src/styles.css" />
 		<link rel="icon" href="https://fav.farm/%F0%9F%94%A8" />
 	</head>
 	<body>
 		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/services">Services</a></li>
-				<li><a href="/contact">Contact & About</a></li>
-			</ul>
+			<div class="nav-container">
+				<a href="/" class="logo logo-mobile">LJR PM</a>
+				<a href="/" class="logo logo-main">LJR Property Maintenance</a>
+				<ul>
+					<li><a href="/services">Services</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</div>
 		</nav>
 
 		<section class="hero">
-			<h1>Home improvements start here</h1>
-			<p>Welcome to our hub of construction and maintenance excellence! We're here to help you build and maintain with confidence, ensuring your projects are successful from the ground up.</p>
-			<a href="contact.html" class="cta-button">Get in Touch</a>
+			<div class="hero-content">
+				<h1>
+					Home improvements<br />
+					start here
+				</h1>
+				<div class="hero-cta">
+					<p>Welcome to our hub of construction and maintenance excellence! We're here to help you build and maintain with confidence, ensuring your projects are successful from the ground up.</p>
+					<a href="/contact" class="cta-button">Get in Touch</a>
+				</div>
+			</div>
 		</section>
 
 		<div class="container">
+			<div class="img-placeholder hero-image">
+				<span>Hero Image</span>
+			</div>
+
 			<section class="intro">
 				<h2>Trusted Property Management Services</h2>
 				<p>With years of carpentry expertise and a dedication to excellence, we provide comprehensive property management solutions tailored to your needs.</p>
@@ -30,14 +44,23 @@
 
 			<section class="features">
 				<div class="feature-card">
+					<div class="img-placeholder feature-image">
+						<span>Feature 1</span>
+					</div>
 					<h3>Expert Craftsmanship</h3>
 					<p>Professional carpentry services backed by years of hands-on experience and attention to detail in every project.</p>
 				</div>
 				<div class="feature-card">
+					<div class="img-placeholder feature-image">
+						<span>Feature 2</span>
+					</div>
 					<h3>Reliable Service</h3>
 					<p>Dependable property maintenance and management you can count on, delivered on time and within budget.</p>
 				</div>
 				<div class="feature-card">
+					<div class="img-placeholder feature-image">
+						<span>Feature 3</span>
+					</div>
 					<h3>Personal Touch</h3>
 					<p>Direct communication and personalised service that treats your property with the care it deserves.</p>
 				</div>
@@ -45,7 +68,8 @@
 		</div>
 
 		<footer>
-			<p>&copy; 2024 Property Care Services. All rights reserved.</p>
+			<p>&copy; 2026 LJR Property Maintenance. All rights reserved.</p>
 		</footer>
+		<script src="../src/script.js"></script>
 	</body>
 </html>
