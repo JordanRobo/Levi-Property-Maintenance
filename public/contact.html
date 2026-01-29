@@ -1,219 +1,203 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contact & About - Property Care Services</title>
-		<link rel="stylesheet" href="../src/styles.css" />
-		<link rel="icon" href="https://fav.farm/%F0%9F%94%A8" />
-	</head>
-	<body>
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo logo-mobile">LJR PM</a>
-				<a href="/" class="logo logo-main">LJR Property Maintenance</a>
-				<ul>
-					<li><a href="/services">Services</a></li>
-					<li><a href="/contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
 
-		<section class="page-header">
-			<div class="page-header-container">
-				<h1>Contact & About</h1>
-			</div>
-		</section>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & About - Property Care Services</title>
+    <link rel="stylesheet" href="../src/styles.css" />
+    <link rel="icon" href="https://fav.farm/%F0%9F%94%A8" />
 
-		<div class="container">
-			<div class="content-grid">
-				<!-- About Section -->
-				<section class="about-section">
-					<div class="img-placeholder owner-portrait">
-						<span>Levi's Photo</span>
-					</div>
-					<h2>Who are we?</h2>
-					<p>
-						G'day, I'm Levi — the owner and operator of LJR Property Maintenance. As a qualified carpenter with hands-on experience across residential maintenance and repairs I take pride in delivering reliable, high-quality
-						workmanship and clear communication. Whether it's a small repair or ongoing property maintenance I will ensure your property receives the attention and care it deserves.
-					</p>
+    <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "name": "Contact LJR Property Maintenance",
+              "url": "https://ljrpm.com.au/contact",
+              "description": "Get in touch with LJR Property Maintenance for all your carpentry and property maintenance needs in Geelong",
+              "mainEntity": {
+                "@type": "LocalBusiness",
+                "name": "LJR Property Maintenance",
+                "telephone": "+61-484-904-774",
+                "email": "levi@ljrpm.com.au",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Geelong",
+                  "addressRegion": "VIC",
+                  "addressCountry": "AU"
+                }
+              }
+            }
+            </script>
+</head>
 
-					<p>
-						I work closely with homeowners, landlords and property managers to keep properties safe, functional and well-maintained. I'm fully insured and bring a detail-focused approach to every job, offering honest advice and
-						prompt service when you need it most. You can have peace of mind knowing your property is in capable hands.
-					</p>
-				</section>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo logo-mobile">LJR PM</a>
+            <a href="/" class="logo logo-main">LJR Property Maintenance</a>
+            <ul>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-				<!-- Contact Form -->
-				<section class="contact-section">
-					<h2>Get in Touch</h2>
-					<form class="contact-form" action="/submit" method="POST">
-						<div class="form-group">
-							<label for="name">Name</label>
-							<input type="text" id="name" name="name" required />
-						</div>
+    <section class="page-header">
+        <div class="page-header-container">
+            <h1>Contact & About</h1>
+        </div>
+    </section>
 
-						<div class="form-group">
-							<label for="email">Email</label>
-							<input type="email" id="email" name="email" required />
-						</div>
+    <main>
+        <div class="container">
+            <div class="content-grid">
+                <!-- About Section -->
+                <section class="about-section">
+                    <div class="img-placeholder owner-portrait">
+                        <span>Levi's Photo</span>
+                    </div>
+                    <h2>Who are we?</h2>
+                    <p>
+                        G'day, I'm Levi — the owner and operator of LJR Property Maintenance. As a qualified carpenter
+                        with hands-on experience across residential maintenance and repairs I take pride in delivering
+                        reliable, high-quality
+                        workmanship and clear communication. Whether it's a small repair or ongoing property maintenance
+                        I will ensure your property receives the attention and care it deserves.
+                    </p>
 
-						<div class="form-group">
-							<label for="phone">Phone</label>
-							<input type="tel" id="phone" name="phone" />
-						</div>
+                    <p>
+                        I work closely with homeowners, landlords and property managers to keep properties safe,
+                        functional and well-maintained. I'm fully insured and bring a detail-focused approach to every
+                        job, offering honest advice and
+                        prompt service when you need it most. You can have peace of mind knowing your property is in
+                        capable hands.
+                    </p>
+                </section>
 
-						<div class="form-group">
-							<label for="service">Service Interested In</label>
-							<select id="service" name="service">
-								<option value="">Select a service</option>
-								<option value="carpentry">Custom Carpentry</option>
-								<option value="maintenance">Property Maintenance</option>
-								<option value="renovation">Renovations & Remodeling</option>
-								<option value="exterior">Exterior Services</option>
-								<option value="management">Property Management</option>
-								<option value="consultation">Consultation</option>
-							</select>
-						</div>
+                <!-- Contact Form -->
+                <section class="contact-section">
+                    <h2>Get in Touch</h2>
+                    <form class="contact-form" action="/submit" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
 
-						<div class="form-group">
-							<label for="message">Message <span style="opacity: 0.5; font-style: italic">optional</span></label>
-							<textarea id="message" name="message"></textarea>
-						</div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
 
-						<button type="submit" class="submit-button">Send Message</button>
-					</form>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" />
+                        </div>
 
-					<div class="contact-info">
-						<h3>Direct Contact</h3>
-						<p><strong>Phone:</strong> <a href="tel:+61484904774">0484 904 774</a></p>
-						<p><strong>Email:</strong> <a href="mailto:levi@ljrpm.com.au">levi@ljrpm.com.au</a></p>
-						<p><strong>Hours:</strong> Monday - Friday, 8:00 AM - 6:00 PM</p>
-					</div>
-				</section>
-			</div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="carpentry">Custom Carpentry</option>
+                                <option value="maintenance">Property Maintenance</option>
+                                <option value="renovation">Renovations & Remodeling</option>
+                                <option value="exterior">Exterior Services</option>
+                                <option value="management">Property Management</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
 
-			<!-- Values Section -->
-			<section class="values-section">
-				<h2>Our Values</h2>
-				<div class="values-grid">
-					<div class="value-card">
-						<div class="img-placeholder value-image">
-							<span>Quality</span>
-						</div>
-						<h3>Quality Craftsmanship</h3>
-						<p>We take pride in every detail, ensuring work that stands the test of time.</p>
-					</div>
-					<div class="value-card">
-						<div class="img-placeholder value-image">
-							<span>Integrity</span>
-						</div>
-						<h3>Integrity</h3>
-						<p>Honest communication and transparent pricing are at the heart of our business.</p>
-					</div>
-					<div class="value-card">
-						<div class="img-placeholder value-image">
-							<span>Reliability</span>
-						</div>
-						<h3>Reliability</h3>
-						<p>When we commit to a project, you can count on us to deliver on time and on budget.</p>
-					</div>
-					<div class="value-card">
-						<div class="img-placeholder value-image">
-							<span>Customer</span>
-						</div>
-						<h3>Customer Focused</h3>
-						<p>Your satisfaction is our priority, and we work closely with you every step of the way.</p>
-					</div>
-				</div>
-			</section>
-		</div>
+                        <div class="form-group">
+                            <label for="message">Message <span
+                                    style="opacity: 0.5; font-style: italic">optional</span></label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
 
-		<footer>
-			<p>&copy; 2026 LJR Property Maintenance. All rights reserved.</p>
-		</footer>
-		<script src="../src/script.js"></script>
-		<style>
-			.toast {
-				position: fixed;
-				top: 20px;
-				right: 20px;
-				padding: 16px 24px;
-				border-radius: 8px;
-				color: white;
-				font-weight: 500;
-				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-				animation: slideIn 0.3s ease-out;
-				z-index: 1000;
-				max-width: 400px;
-			}
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
 
-			.toast.success {
-				background-color: #10b981;
-			}
+                    <div class="contact-info">
+                        <h3>Direct Contact</h3>
+                        <p><strong>Phone:</strong> <a href="tel:+61484904774">0484 904 774</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:levi@ljrpm.com.au">levi@ljrpm.com.au</a></p>
+                        <p><strong>Hours:</strong> Monday - Friday, 8:00 AM - 6:00 PM</p>
+                    </div>
+                </section>
+            </div>
 
-			.toast.error {
-				background-color: #ef4444;
-			}
+            <!-- Values Section -->
+            <section class="values-section">
+                <h2>Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="img-placeholder value-image">
+                            <span>Quality</span>
+                        </div>
+                        <h3>Quality Craftsmanship</h3>
+                        <p>We take pride in every detail, ensuring work that stands the test of time.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="img-placeholder value-image">
+                            <span>Integrity</span>
+                        </div>
+                        <h3>Integrity</h3>
+                        <p>Honest communication and transparent pricing are at the heart of our business.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="img-placeholder value-image">
+                            <span>Reliability</span>
+                        </div>
+                        <h3>Reliability</h3>
+                        <p>When we commit to a project, you can count on us to deliver on time and on budget.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="img-placeholder value-image">
+                            <span>Customer</span>
+                        </div>
+                        <h3>Customer Focused</h3>
+                        <p>Your satisfaction is our priority, and we work closely with you every step of the way.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 LJR Property Maintenance. All rights reserved.</p>
+    </footer>
+    <script src="../src/script.js"></script>
 
-			.toast.hiding {
-				animation: slideOut 0.3s ease-out forwards;
-			}
+    <script>
+        // Check for success or error parameters in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const success = urlParams.get("success");
+        const error = urlParams.get("error");
 
-			@keyframes slideIn {
-				from {
-					transform: translateX(400px);
-					opacity: 0;
-				}
-				to {
-					transform: translateX(0);
-					opacity: 1;
-				}
-			}
+        function showToast(message, type) {
+            // Create toast element
+            const toast = document.createElement("div");
+            toast.className = `toast ${type}`;
+            toast.textContent = message;
+            document.body.appendChild(toast);
 
-			@keyframes slideOut {
-				from {
-					transform: translateX(0);
-					opacity: 1;
-				}
-				to {
-					transform: translateX(400px);
-					opacity: 0;
-				}
-			}
-		</style>
+            // Remove toast after 4 seconds
+            setTimeout(() => {
+                toast.classList.add("hiding");
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }, 4000);
 
-		<script>
-			// Check for success or error parameters in URL
-			const urlParams = new URLSearchParams(window.location.search);
-			const success = urlParams.get("success");
-			const error = urlParams.get("error");
+            // Clean up URL
+            const newUrl = window.location.pathname;
+            window.history.replaceState({}, "", newUrl);
+        }
 
-			function showToast(message, type) {
-				// Create toast element
-				const toast = document.createElement("div");
-				toast.className = `toast ${type}`;
-				toast.textContent = message;
-				document.body.appendChild(toast);
+        if (success === "true") {
+            showToast("✓ Thank you! Your message has been sent successfully.", "success");
+        } else if (error === "true") {
+            showToast("✗ Sorry, there was an error sending your message. Please try again.", "error");
+        }
+    </script>
+</body>
 
-				// Remove toast after 4 seconds
-				setTimeout(() => {
-					toast.classList.add("hiding");
-					setTimeout(() => {
-						toast.remove();
-					}, 300);
-				}, 4000);
-
-				// Clean up URL
-				const newUrl = window.location.pathname;
-				window.history.replaceState({}, "", newUrl);
-			}
-
-			if (success === "true") {
-				showToast("✓ Thank you! Your message has been sent successfully.", "success");
-			} else if (error === "true") {
-				showToast("✗ Sorry, there was an error sending your message. Please try again.", "error");
-			}
-		</script>
-	</body>
 </html>

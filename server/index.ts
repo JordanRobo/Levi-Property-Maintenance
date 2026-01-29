@@ -8,10 +8,11 @@ const server = serve({
 		"/": index,
 		"/services": services,
 		"/contact": contact,
+        "/sitemap.xml": () => { return new Response(Bun.file('sitemap.xml')) },
+        "/robots.txt": () => { return new Response(Bun.file('robots.txt')) },
+        "/llms.txt": () => { return new Response(Bun.file('llms.txt')) },
 		"/submit": {
-			// Handle form submission server-side
 			async POST(req) {
-				// Get form data (not JSON)
 				const formData = await req.formData();
 				let message = "";
 

@@ -1,0 +1,18 @@
+# robots.txt for LJR Property Maintenance
+# https://ljrpm.com.au
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://ljrpm.com.au/sitemap.xml
+
+# Block common admin/system paths if they exist
+# Uncomment these if you have these directories
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /.git/
+
+# Allow crawling of CSS and JS files for proper rendering
+Allow: /*.css
+Allow: /*.js
