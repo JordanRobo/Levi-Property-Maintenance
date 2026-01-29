@@ -592,17 +592,6 @@ nav a:hover {
 	position: relative;
 }
 
-.about-section::before {
-	content: "◢";
-	position: absolute;
-	top: -30px;
-	right: -30px;
-	font-size: 10rem;
-	color: var(--electric-blue);
-	opacity: 0.3;
-	z-index: 0;
-}
-
 .about-section h2 {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 3rem;
@@ -981,13 +970,66 @@ footer p {
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
 	.logo-main {
 		display: none;
 	}
 
 	.logo-mobile {
 		display: block;
+	}
+
+	/* Fix horizontal overflow on contact page */
+	.about-section,
+	.contact-section {
+		padding: 2rem 1.5rem;
+	}
+
+	.about-section {
+		box-shadow: 8px 8px 0 var(--coral-orange);
+	}
+
+	.contact-section {
+		box-shadow: -8px 8px 0 var(--electric-blue);
+	}
+
+	.owner-portrait {
+		box-shadow: 8px 8px 0 var(--electric-blue);
+	}
+
+	/* Reduce container padding */
+	.container {
+		padding: 4rem 1rem;
+	}
+
+	/* Ensure content doesn't overflow */
+	.content-grid {
+		gap: 2rem;
+	}
+
+	/* Adjust form elements for very small screens */
+	.form-group input,
+	.form-group textarea,
+	.form-group select {
+		max-width: 100%;
+		font-size: 0.9rem;
+	}
+
+	/* Reduce CTA section padding */
+	.cta-section {
+		padding: 3rem 1.5rem;
+		box-shadow: -10px 10px 0 var(--deep-forest);
+	}
+
+	/* Reduce services intro padding */
+	.services-intro {
+		padding: 2rem 1.5rem;
+		box-shadow: 8px 8px 0 var(--coral-orange);
+	}
+
+	/* Adjust values cards */
+	.value-card {
+		padding: 2rem 1.5rem;
 	}
 }
 

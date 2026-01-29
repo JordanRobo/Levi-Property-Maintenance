@@ -8,14 +8,21 @@ const server = serve({
 		"/": index,
 		"/services": services,
 		"/contact": contact,
-		"/api/contact": {
-			POST: async (req) => {
-				const body = await req.body?.json();
+		"/submit": {
+			// Handle form submission server-side
+			async POST(req) {
+				// Get form data (not JSON)
+				const formData = await req.formData();
+				let message = "";
+
+				for (const [key, value] of formData.entries()) {
+					message += `${key}: ${value}\n`;
+				}
 
 				try {
-					const response = await fetch("https://ntfy.mercury.rs", {
+					const response = await fetch("https://ntfy.mercury.rs/web-form", {
 						method: "POST",
-						body,
+						body: message,
 						headers: {
 							Authorization: `Bearer ${Bun.env.NTFY_TOKEN || ""}`,
 							Title: "New Enquiry",
@@ -25,12 +32,18 @@ const server = serve({
 
 					if (!response.ok) throw new Error(`Response status: ${response.status}`);
 
-					return Response.json({ created: true, status: 200 });
+					// Redirect with success parameter
+					return Response.redirect("/contact?success=true", 303);
 				} catch (err) {
-					return Response.json({ created: false, status: 400 });
+					// Redirect with error parameter
+					return Response.redirect("/contact?error=true", 303);
 				}
 			},
 		},
+	},
+
+	fetch(req) {
+		return new Response("Not Found", { status: 404 });
 	},
 });
 
